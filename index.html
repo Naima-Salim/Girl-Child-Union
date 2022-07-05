@@ -17,8 +17,8 @@
                 </label>
             <ul>
                 <li><a href="index.html">Events</a></li>
-                <li><a href="member.html">Members</a></li>
-                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="#members">Members</a></li>
+                <li><a href="#contact">Contacts</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
@@ -42,6 +42,7 @@
         that was founded in 2020 to help girls who are <br>
         poor by providing them with education, clothes, <br>
          sanitary towels and other small basic need.</p>
+         
          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0FD392" fill-opacity="0.5" d="M0,224L48,197.3C96,171,192,117,288,96C384,75,480,85,576,117.3C672,149,768,203,864,213.3C960,224,1056,192,1152,197.3C1248,203,1344,245,1392,266.7L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
          <button class="read">Read More</button>
     </div>
@@ -73,6 +74,7 @@
         <div class="image-3">
             <img src="support.png" height="300px">
         </div>
+        
 
         <!-- <div class="support">
             <p class="help">Help and Support</p>
@@ -104,7 +106,7 @@
         </div> -->
     </div>
 
-    <div class="container-4">
+    <div class="container-4" id="contact">
         <p class="contacts">Contact Us</p>
         <div class="input1">
             <input type="text" placeholder="Enter name" name="name" required>
@@ -124,7 +126,14 @@
             <i class="fa fa-comments"  style="color: white; font-size: 50px;"></i>
         </div>
         </div>
-        <button class="send">Send message</button>
+        <button onclick="myFunction()" class="send">Send</button>
+        <p id="demo"></p>
+        <script>
+          function myFunction() {
+            document.getElementById("demo").innerHTML = "Your message is sent successfully!";
+          }
+          </script>
+        <!-- <button class="send">Send message</button> -->
 
         <div class="circle1">
             <i class="fa fa-circle" style="color: #66A690; font-size: 150px;"></i>
@@ -143,38 +152,68 @@
         </div>
         </div>
 
-        <div class="container-5">
+        <div class="container-5" id="members">
             <h4>The People Behind This Organization</h4>
             <div class="image3">
-                <img src="deeh.png" height="500" width="350">
+                <img src="dee.png" height="600" width="450" style="margin-left: -13%;">
+                <div class="fadedbox">
+                    <div class="title text"> This is Khadija Abdallah, a baker by profession. </div>
+              </div>
               </div>
               <p class="name1">Khadija Abdalla</p>
               <p class="title1">Founder</p>
 
               <div class="image4">
-                <img src="deeh.png" height="500" width="350">
+                <img src="glo.png" height="570" width="800" style="margin-left: -29%; margin-top: 7%;">
+                <div class="fadedbox">
+                    <div class="title text">Glory Kuria, a community service volunteer.</div>
+              </div>
               </div>
               <p class="name2">Glory Kuria</p>
                <p class="title2">Founder</p>
 
               <div class="image5">
-                <img src="deeh.png" height="500" width="350">
+                <img src="peshy (1).png" height="550" width="600" style="margin-left: -23%; margin-top: 11%;">
+                <div class="fadedbox">
+                    <div class="title text">Patience Muguro, an enterprenuer student.</div>
+              </div>
               </div>
               <p class="name3">Patience Muguro</p>
                <p class="title3">Member</p>
 
               <div class="image6">
-                <img src="deeh.png" height="500" width="350">
+                <img src="johny.png" height="500" width="350" style="margin-top: 28%;" >
+                <div class="fadedbox">
+                    <div class="title text">Johnny Njoroge, owner of mkenya halisi clothing</div>
+              </div>
               </div>
               <p class="name4">Johnny Njoroge</p>
                <p class="title4">Member</p>
 
-              <div class="image7">
-                <img src="deeh.png"  height="500" width="350">
+               <div class="image7">
+                <img src="mchize.png" height="500" width="400" style="margin-left: -12%; margin-top: 27%;">
+                <div class="fadedbox">
+                    <div class="title text">Eric Kamiri, Photographer by Profession. @mchize-pictures </div>
               </div>
+              </div>              
               <p class="name5">Eric Kamiri</p>
                <p class="title5">Member</p>
         </div>
+
+        <footer>
+            <p class="instagram">Instagram</p>
+            <div class="insta">
+            <i class="fa fa-instagram"></i>
+        </div>
+        <div class="link">
+        <a href="https://www.instagram.com/girlchild_union/" style="color: blue;">Visit instagram page</a>
+       </div>
+       <p class="whatsapp">Whatsapp</p>
+       <div class="sup">
+        <i class="fa fa-whatsapp"></i>
+        <p class="number">+254 769 523732</p>
+       </div>
+        </footer>
        
        
     </section>
